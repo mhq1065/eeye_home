@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+Route::get('/applicants',function(){
+    return view('applicant');
+});
+Route::get('/api/applicants/{xh}','ApplicantController@index');

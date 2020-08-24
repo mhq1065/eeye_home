@@ -15,6 +15,11 @@ class CreateInterviewsTable extends Migration
     {
         Schema::create('interviews', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('xh');
+            $table->string('time');
+            $table->string('position');
+            $table->string('department');
             $table->timestamps();
         });
     }
