@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title>你的邀请函</title>
+	<link rel=icon href=/myicon.ico>
 	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -35,11 +36,7 @@
 
 		@font-face {
 			font-family: 'YanoneKaffeesatzRegular';
-			src: url('fonts/yanonekaffeesatz-regular-webfont.eot');
-			src: url('fonts/yanonekaffeesatz-regular-webfont.eot?#iefix') format('embedded-opentype'),
-				url('fonts/yanonekaffeesatz-regular-webfont.woff') format('woff'),
-				url('fonts/yanonekaffeesatz-regular-webfont.ttf') format('truetype'),
-				url('fonts/yanonekaffeesatz-regular-webfont.svg#YanoneKaffeesatzRegular') format('svg');
+			src: url('fonts/yanonekaffeesatz-regular-webfont.ttf') format('truetype'),
 			font-weight: normal;
 			font-style: normal;
 		}
@@ -289,7 +286,7 @@
 					url: `${api_url}${student_id}`
 				})
 				console.log(res)
-				this.info = res.data.data[0]
+				this.info = res.data.state==='fail'?{}:res.data.data[0]
 			}
 		}
 	})
