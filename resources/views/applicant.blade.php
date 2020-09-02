@@ -243,7 +243,7 @@
 					<p class="content">如有特殊情况，请点击下面的按钮。</p>
 
 					</br>
-					{{-- <input type="submit" name="submit" value="下次一定" onclick="defer()" /> --}}
+					<input type="submit" name="submit" value="下次一定" onclick="defer()" />
 				</form>
 			</div>
 		</div>
@@ -251,7 +251,7 @@
 </body>
 <script>
 	function defer() {
-		alert("请联系：")
+		alert("请联系：18267493600")
 	}
 	function getQueryVariable(variable)
 	{
