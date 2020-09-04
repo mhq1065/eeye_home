@@ -251,7 +251,7 @@
 </body>
 <script>
 	function defer() {
-		alert("请联系：18267493600")
+		alert("如不能来,请联系群主,安排新的面试时间!")
 	}
 	function getQueryVariable(variable)
 	{
